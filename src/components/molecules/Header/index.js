@@ -7,19 +7,19 @@ const Header = () => {
     <View style={styles.container}>
       <View style={styles.content}>
         <TouchableOpacity>
-          <ICUser height={25} width={25} />
+          <ICUser height={24} width={24} />
         </TouchableOpacity>
         <TouchableOpacity style={{ marginLeft: 10 }}>
-          <ICLike height={25} width={25} />
+          <ICLike height={24} width={24} />
         </TouchableOpacity>
       </View>
       <View style={styles.content}>
         <TouchableOpacity style={{ marginRight: 10 }}>
-          <ICSun height={25} width={25} />
+          <ICSun height={24} width={24} />
         </TouchableOpacity>
         <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}}>
           <Text style={styles.name}>Anya</Text>
-          <ICDropdown height={10} width={10}/>
+          <ICDropdown height={12} width={12} style={{ top: 2 }} />
         </TouchableOpacity>
       </View>
     </View>
@@ -31,7 +31,7 @@ export default Header;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
-    padding: 12,
+    padding: 14,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },

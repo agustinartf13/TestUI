@@ -5,6 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Baby from '../pages/Baby';
 import Doctor from '../pages/Doctor';
 import Mother from '../pages/Mother';
+import Splash from '../pages/Splash';
 import BottomNavigator from '../components/molecules/BottomNavigator';
 
 const Stack = createNativeStackNavigator();
@@ -30,7 +31,12 @@ const MainApp = () => {
 
 const Route = () => {
   return (
-    <Stack.Navigator initialRouteName="MainApp">
+    <Stack.Navigator initialRouteName="Splash">
+      <Stack.Screen
+        name="Splash"
+        component={Splash}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="Baby"
         component={Baby}
